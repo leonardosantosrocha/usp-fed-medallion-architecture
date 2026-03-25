@@ -4,7 +4,7 @@
 1. Construir a camada SOR: ingestão dos dados do sistema origem;
 2. Construir a camada SOT: harmonizar os dados da camada SOR;
 3. Construir a camada SPEC: especializar os dados da camada SOT;
-4. Modelar usando o fato/dimensão: importar e modelar a SPEC no Postgres;
+4. Modelar usando o fato/dimensão: importar e modelar a SPEC no PostgreSQL;
 5. Gerar valor para o negócio: simular consultas utilizando as tabelas fato/dimensão.
 
 ### 🔍 Diagrama de alto nível do projeto
@@ -28,6 +28,7 @@
         <ul>
             <li>Clone o repositório do projeto em sua máquina.</li>
             <li>Realize a instalação de todas as dependências (requirements.txt).</li>
+            <li>Crie o arquivo '.env' na raiz do projeto e adicione as variáveis 'PG_HOST', 'PG_DB', 'PG_USER', 'PG_PASSWORD' e 'PG_PORT' com os valores definidos durante a instalação do PostgreSQL.</li>
             <li>Execute os scripts em ordem: src/0-sor/script.ipynb, src/1-sot/script.ipynb e src/2-spec/script.ipynb.</li>
         </ul>
 </ol>
